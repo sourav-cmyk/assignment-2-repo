@@ -5,8 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-2</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <section>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Site Logo">
+                <span class="school">SCHOOL</span>
+            </div>
+            <div class="nav-links">
+                <a class="home" href="#">Home</a>
+                <a class="about" href="#">About</a>
+                <a class="facilities" href="#">Facilities</a>
+                <a class="admission" href="#">Admission</a>
+            </div>
+            <div class="contact-btn">
+                <button>Contact</button>
+            </div>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">
+                ☰
+            </div>
+        </nav>
+        
+        <script>
+            function toggleMobileMenu() {
+                const navLinks = document.querySelector('.nav-links');
+                navLinks.classList.toggle('active');
+            }
+        </script>
+    </section>
+    <!-- section2 er jonno -->
+    <section class="content">
+        <div class="image-container">
+            <img src="assets/hero-kids.png" alt="Child" class="child-image">
+        </div>
+        <div class="text-container">
+            <h1>
+                <span class="highlight">Empowering</span> students from small age <span class="highlight2">towards vision</span>
+            </h1>
+            <p>
+                With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.
+            </p>
+            <button class="action-btn">Enroll Now</button>
+        </div>
+    </section>
+    <!-- section 3 suru -->
+    
     
 </body>
 </html>
